@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/main/java/bo/giohang_bo.java=UTF-8
+encoding//src/main/java/controller/AdminQLDTController.java=UTF-8
+encoding//src/main/java/controller/dangkyController.java=UTF-8
+encoding//src/main/java/controller/dangnhapController.java=UTF-8
+encoding//src/main/java/controller/giohangController.java=UTF-8
+encoding//src/main/java/controller/hangController.java=UTF-8
+encoding//src/main/java/controller/searchbyAjax.java=UTF-8
+encoding//src/main/java/controller/xoaController.java=UTF-8
+encoding//src/main/java/dao/KH_dao.java=UTF-8
+encoding//src/main/java/dao/hang_dao.java=UTF-8
+encoding//src/main/java/dao/hoadon_dao.java=UTF-8
+encoding//src/main/webapp/dangky.jsp=UTF-8
+encoding//src/main/webapp/dangnhap.jsp=UTF-8
+encoding//src/main/webapp/giohang.jsp=UTF-8
