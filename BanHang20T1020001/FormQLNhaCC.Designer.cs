@@ -60,6 +60,8 @@
             label2 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            label5 = new Label();
+            textBox1 = new TextBox();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -77,7 +79,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Constantia", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(0, 25, 98);
-            label1.Location = new Point(523, 49);
+            label1.Location = new Point(276, 46);
             label1.Name = "label1";
             label1.Size = new Size(316, 35);
             label1.TabIndex = 0;
@@ -180,6 +182,7 @@
             dataGridView1.Size = new Size(864, 324);
             dataGridView1.TabIndex = 1;
             dataGridView1.RowPrePaint += dataGridView1_RowPrePaint;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // maNCCDataGridViewTextBoxColumn
             // 
@@ -375,6 +378,25 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(752, 50);
+            label5.Name = "label5";
+            label5.Size = new Size(194, 28);
+            label5.TabIndex = 5;
+            label5.Text = "Số lượng sản phẩm";
+            // 
+            // textBox1
+            // 
+            textBox1.Enabled = false;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(952, 46);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(137, 34);
+            textBox1.TabIndex = 6;
+            // 
             // FormQLNhaCC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -382,6 +404,8 @@
             BackColor = Color.FromArgb(139, 211, 221);
             ClientSize = new Size(1115, 474);
             ControlBox = false;
+            Controls.Add(textBox1);
+            Controls.Add(label5);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
@@ -440,5 +464,7 @@
         private PictureBox pictureBox3;
         private Label label4;
         private PictureBox pictureBox4;
+        private Label label5;
+        private TextBox textBox1;
     }
 }

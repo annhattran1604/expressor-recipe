@@ -21,7 +21,7 @@ namespace BanHang20T1020001
             this.Text = "Xin chào " + user;
             txtuser.Text = user;
             timer = new System.Threading.Timer(Timer_Tick, null, 0, 1000);
-            
+
         }
         private void Timer_Tick(object state)
         {
@@ -140,6 +140,13 @@ namespace BanHang20T1020001
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BanHang banHang = new BanHang();
+            banHang.Show();
+            this.Hide();
         }
     }
 }

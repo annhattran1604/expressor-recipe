@@ -68,11 +68,33 @@ namespace BanHang20T1020001.Migrations
                             HinhAnh = "image_path.jpg",
                             MaLoai = "tra",
                             MaNCC = "ncc1",
-                            NgayHH = new DateTime(2024, 1, 14, 17, 25, 39, 98, DateTimeKind.Local).AddTicks(7331),
-                            NgaySX = new DateTime(2023, 12, 15, 17, 25, 39, 98, DateTimeKind.Local).AddTicks(7331),
+                            NgayHH = new DateTime(2024, 2, 3, 16, 1, 49, 294, DateTimeKind.Local).AddTicks(9220),
+                            NgaySX = new DateTime(2024, 1, 4, 16, 1, 49, 294, DateTimeKind.Local).AddTicks(9220),
                             SoLuong = 50L,
                             TenDoUong = "Trà C2 Hương Chanh"
                         });
+                });
+
+            modelBuilder.Entity("BanHang20T1020001.Model.HoaDon", b =>
+                {
+                    b.Property<string>("MaDoUong")
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
+
+                    b.Property<long>("Gia")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("SoLuong")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("TenDoUong")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MaDoUong");
+
+                    b.ToTable("HoaDon");
                 });
 
             modelBuilder.Entity("BanHang20T1020001.Model.Provider", b =>
@@ -138,7 +160,7 @@ namespace BanHang20T1020001.Migrations
                         new
                         {
                             maloai = "tra",
-                            ngaynhap = new DateTime(2023, 12, 15, 17, 25, 39, 98, DateTimeKind.Local).AddTicks(7308),
+                            ngaynhap = new DateTime(2024, 1, 4, 16, 1, 49, 294, DateTimeKind.Local).AddTicks(9186),
                             tenloai = "Trà đống chai"
                         });
                 });

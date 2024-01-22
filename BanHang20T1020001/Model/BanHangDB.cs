@@ -12,6 +12,8 @@ namespace BanHang20T1020001.Model
         public DbSet<Provider> Providers { get; set; }
         public DbSet<Drinks> Drinks { get; set; }
         public DbSet<Types> Types { get; set; }
+
+        public DbSet<HoaDon> hoaDons { get; set; }
         public string DbName = "banhang.db";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

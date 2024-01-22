@@ -156,5 +156,13 @@ namespace BanHang20T1020001
             formTrangChu.Show();
             this.Hide();
         }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            var selCat = providerBindingSource.Current as Provider;
+            var db = new BanHangDB();
+            var obj = db.Drinks.Where(t => t.MaNCC == selCat.MaNCC).ToList();
+            textBox1.Text = obj.Count.ToString();
+        }
     }
 }

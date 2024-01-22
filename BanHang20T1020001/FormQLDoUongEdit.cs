@@ -21,6 +21,7 @@ namespace BanHang20T1020001
             InitializeComponent();
             errorProvider = new ErrorProvider();
             this.drinks = drinks;
+            txtsl.Text = "0";
             if (drinks != null)
             {
                 var db = new BanHangDB();
@@ -185,6 +186,25 @@ namespace BanHang20T1020001
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            long a = int.Parse(txtsl.Text);
+            if (a >= 10)
+            {
+                txtsl.Text = (a - 10).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Số lương nhỏ hơn 10", "");
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            long a = int.Parse(txtsl.Text);
+            txtsl.Text = (a + 10).ToString();
         }
     }
 }

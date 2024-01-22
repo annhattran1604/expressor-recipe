@@ -81,3 +81,4 @@ E:\.net frame\Nhom1\BanHang20T1020001\bin\Debug\net6.0-windows\runtimes\osx\nati
 E:\.net frame\Nhom1\BanHang20T1020001\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 E:\.net frame\Nhom1\BanHang20T1020001\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 E:\.net frame\Nhom1\BanHang20T1020001\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+E:\.net frame\Nhom1\BanHang20T1020001\obj\Debug\net6.0-windows\BanHang20T1020001.BanHang.resources

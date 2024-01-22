@@ -62,6 +62,8 @@
             label2 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            txtsl = new TextBox();
+            label5 = new Label();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)typesBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)typeBindingSource).BeginInit();
@@ -82,7 +84,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Constantia", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(0, 25, 98);
-            label1.Location = new Point(525, 45);
+            label1.Location = new Point(297, 46);
             label1.Name = "label1";
             label1.Size = new Size(317, 35);
             label1.TabIndex = 0;
@@ -192,6 +194,7 @@
             dataGridView1.Size = new Size(788, 319);
             dataGridView1.TabIndex = 4;
             dataGridView1.RowPrePaint += dataGridView1_RowPrePaint;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // maloaiDataGridViewTextBoxColumn
             // 
@@ -374,6 +377,26 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // txtsl
+            // 
+            txtsl.Enabled = false;
+            txtsl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtsl.Location = new Point(880, 46);
+            txtsl.Name = "txtsl";
+            txtsl.PlaceholderText = "Số lượng sản phẩm";
+            txtsl.Size = new Size(157, 34);
+            txtsl.TabIndex = 5;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(684, 49);
+            label5.Name = "label5";
+            label5.Size = new Size(194, 28);
+            label5.TabIndex = 6;
+            label5.Text = "Số lượng sản phẩm";
+            // 
             // FormQuanLyLoai
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -381,6 +404,8 @@
             BackColor = Color.FromArgb(139, 211, 221);
             ClientSize = new Size(1068, 471);
             ControlBox = false;
+            Controls.Add(label5);
+            Controls.Add(txtsl);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(label1);
@@ -443,5 +468,7 @@
         private PictureBox pictureBox4;
         private Label label3;
         private PictureBox pictureBox3;
+        private TextBox txtsl;
+        private Label label5;
     }
 }
