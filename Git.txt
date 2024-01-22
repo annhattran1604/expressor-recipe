@@ -1,0 +1,57 @@
+Repository
+	Khởi tạo Git Repository:
+	- Khởi động git tại mục lưu trữ dự án hoặc vào git dùng lệnh
+	cs ~/<path dẫn tới lưu trữ dự án>/
+	- Khởi tạo kho chứa mới 
+	git init
+	- Lỗi hay gặp : Tạo ở mục cấp quá cao : ngoài ổ đĩa sẽ khó đưa vào thư mục nhỏ
+	- Clone repo về máy bằng lệnh sau:
+		git clone <https>
+
+* Để tạo một người dùng Author mới trong Git, bạn cần sử dụng lệnh sau:
+	git config --global user.name "trannhatan"
+	git config --global user.email "annhattran1604@gmail.com"
+		
+* Remote:
+	- Kiểm tra danh sách remote repositories:
+	git remote -v
+
+	- Thêm một remote repository mới:
+	git remote add <remote-name> <remote-url>
+
+	-Đổi tên remote repository:
+	git remote rename <old-name> <new-name>
+
+	-Xoá remote repository:
+	git remote rm <remote-name>
+* Push:
+	-Đẩy tất cả các nhánh lên remote repository:
+	git push origin --all
+
+	-Đặt remote tracking branch khi đẩy lần đầu (đặt upstream):
+	git push -u origin <branch-name>
+
+	* Fetch:
+	- Cập nhật thông tin từ remote repository (nhưng không hợp nhất):
+	git fetch origin
+
+	- Kiểm tra nhánh:
+	Xem danh sách các nhánh local và remote:
+	git branch -a
+
+	- Thêm và Commit: Thêm các tệp đã thay đổi vào staging area:
+	git add <file1> <file2> ...
+
+	- Commit các thay đổi đã staging:
+	git commit -m "commit message"
+	- Git Status: Kiểm tra trạng thái của working directory và staging area:
+	git status
+	- Log: Xem lịch sử commit:
+	git log
+* Cập nhật dữ liệu 
+	1.Thêm và commit thay đổi:
+		git add <tên folfer>
+		git commit -m "Mô tả commit"
+	2.Đẩy lên github:
+		git push origin main
+		git push -u origin main
