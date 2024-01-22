@@ -1,4 +1,4 @@
-Repository
+Repository-git
 	Khởi tạo Git Repository:
 	- Khởi động git tại mục lưu trữ dự án hoặc vào git dùng lệnh
 	cs ~/<path dẫn tới lưu trữ dự án>/
